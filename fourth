@@ -1,0 +1,92 @@
+# 代码编写者：左宝良
+#顺序结构，把大象装冰箱一共几步
+'''print('------开始------')
+print('1.打卡冰箱门')
+print('2.把大象放冰箱里')
+print('3.关上冰箱门')
+print('----结束-----')
+
+#选择结构
+money=1000 #余额
+s=int(input('请输入取款金额:'))
+#判断余额是否充足,单分支
+if money>=s:
+    money=money-s
+    print('取款成功，余额为：',money)
+
+#双分支,判断奇偶数
+num=int(input('请输入一个整数：'))
+if num%2==0:
+    print(num,'是一个偶数')
+else:
+    print(num,'是一个奇数')'''
+
+#多分支,判断成绩等级
+'''score=int(input('请输入一个成绩：'))
+if score>=90 and score<=100:
+    print('优秀')
+elif score>=80 and score<90:
+    print('良好')
+elif score>=70 and score<80:
+    print('一般')
+elif score>=60 and score<70:
+    print('及格')
+elif score<60:
+    print('差')
+else:
+    print('输入错误的成绩')'''
+
+#简洁写法
+score=int(input('请输入一个成绩：'))
+if 90<=score<=100:
+    print('优秀')
+elif 80<=score<=89:
+    print('良好')
+elif 70<=score<=79:
+    print('一般')
+elif 60<=score<=69:
+    print('及格')
+elif 60<score:
+    print('差')
+else:
+    print('输入错误的成绩')
+
+#嵌套if
+answer=input('你是会员嘛？y/n')
+money=float(input('输入你的消费金额：'))
+if answer=='y':
+    print('你是会员')
+    if money>=200:
+        print('打八折，付款金额为：',money*0.8)
+    elif 100<=money<=200:
+        print('打九折，付款金额为：',money*0.9)
+    else:
+        print('不打折，付款金额为：',money)
+elif answer=='n':
+    print('你不是会员')
+    if money>=200:
+        print('打9.5折，付款金额为：',money*0.95)
+    else:
+        print('不打折，付款金额为：',money)
+else:
+    print('输入错误')
+    -----分界线-------
+    # 代码编写者：左宝良
+#比较两个数大小
+num1=int(input('请输入一个整数：'))
+num2=int(input('请输入另一个整数：'))
+'''if num1>=num2:
+    print(num1,'大于',num2)
+else:
+    print(num2,'大于',num1)'''
+
+#条件表达式
+print(         (str(num1)+'大于'+str(num2))          if num1>=num2  else     (str(num1)+'小于'+str(num2)))
+
+
+#pass语句
+answer=input('你是会员嘛？y/n')
+if answer=='y':
+    pass
+else:
+    pass
